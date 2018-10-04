@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Akvelon</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="page_header">
+            <h1 class="page_head col-sm-12">Invoices</h1>
+        </div>
+        <div class="container">
+            <form id="frmPerson" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <label for="numb" class="control-label">Number</label>
+                        <input type="text" id="numb" class="form-control" placeholder="Number">
+                    </div>
+                    <div class="col-sm-6">
+                         <label for="invDate" class="control-label">Invoice Date</label>
+                         <input type="date" id="invDate" class="form-control" placeholder="Select Date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <label for="splDate" class="control-label">Supply Date</label>
+                        <input type="date" id="splDate" class="form-control" placeholder="Select Date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label for="signature" class="control-label">Comment</label>
+                        <textarea id="signature" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="submit" value="Save" id="btnSave" class="btn btn-success pull-right"/>
+                    </div>
+                </div>
+            </form>
+        </div>      
+        <div class="container">
+            <table id="tblList" class="table table-bordered"></table>
+        </div>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
+        <script src="js/script.js"></script>
+    </body>
+</html>
